@@ -1,0 +1,93 @@
+.logo{
+    height: 3.25rem;
+    margin-left: 3rem;
+}
+
+//Search 
+.search{
+    flex:0 0 40%;
+    display: flex;
+    &__input{
+        font-family: inherit;
+        font-size: inherit;
+        color:inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        border-radius:100px;
+        padding:0.7rem 2rem;
+        width:90%;
+        transition:all 0.2s;
+        margin-right:-3.5rem;
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color:var(--color-grey-light-4);
+        }
+    }
+    &__button{
+        border:none;
+        background-color: var(--color-grey-light-2);
+        align-items: center;
+        &:focus{
+            outline:none;
+        }
+        &:active{
+            transform:translateY(2px);
+        }
+    }
+
+    &__input:focus + &__button{
+        background-color: var(--color-grey-light-3);
+    }
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        fill:var(--color-grey-dark-3);
+    }
+}
+
+.user-nav{
+    display: flex;
+    justify-content: space-between;
+    align-self:stretch;
+    & > *{
+        padding:0 2rem;
+        cursor:pointer;
+        height:100%;
+        display: flex;
+        align-items: center
+    }
+    & >*:hover{
+        background-color: var(--color-grey-light-2);
+    }
+    &__icon-box{
+       
+    }
+
+    &__icon{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    &__notification{
+      
+    }
+
+    &__user{
+       
+    }
+
+    &__user-photo{
+        height:3.75rem;
+        border-radius: 50%;
+    }
+
+    &__user-name{
+
+    }
+}
